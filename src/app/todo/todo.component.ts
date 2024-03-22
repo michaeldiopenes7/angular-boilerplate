@@ -15,7 +15,7 @@ export class TodoComponent {
   pushItemToList() {
 
     if (!this.todoItem.value){
-      alert("Please Enter Something huhuh");
+      alert("Invalid Response");
       return;
     }
 

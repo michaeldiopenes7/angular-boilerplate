@@ -1,1 +1,12 @@
-<p>Michael John Diopenes</p>
+<div class="flex space-x-4">
+    <div class="size-full bg-gray-200 flex flex-col text-center p-4">
+        <label for="todoItem">ToDo Item</label>
+        <input type="text" name="todoItem" id="todoItem" [formControl]="todoItem"/>
+        <button (click)="pushItemToList()" class="bg-gray-400 p-">Add to List</button>
+    </div>   
+        <ol class="bg-zinc-100 border border-slate-200">
+            @for (item of todoList; track item) {
+                <li>{{item}}</li>
+            }
+        </ol>
+</div>
